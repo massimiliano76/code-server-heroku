@@ -19,7 +19,7 @@ COPY deploy-container/rclone-tasks.json /tmp/rclone-tasks.json
 # Fix permissions for code-server
 RUN sudo chown -R coder:coder /home/coder/.local
 
-# Install NodeJS
+# Install NodeJS as Deploy on Heroku docs
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_12.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
